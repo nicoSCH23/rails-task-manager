@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="editor">
+        <h1><%= @task.title %></h1>
+       <%= link_to 'Edit this task',  edit_path, class: 'btn btn-primary btn-edit' %>
+      </div>
+      <div class="desc">
+        <p><%= @task.details %></p>
+      </div>
+      <% if @task.completed %>
+        <i class="far fa-check-square"> This task is completed</i>
+      <% else %>
+        <i class="far fa-square"> This task is not completed</i>
+      <% end %>
+      <div class="back-to">
+        <%= link_to 'Back to list', tasks_path %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+.desc {
+  background-color: #F6F8F6;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.editor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-edit {
+  height: 30px;
+  margin: 30px
+}
