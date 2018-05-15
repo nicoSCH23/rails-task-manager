@@ -28,3 +28,7 @@
   height: 30px;
   margin: 30px
 }
+
+.edit-list li {
+  padding: 5px;
+}
