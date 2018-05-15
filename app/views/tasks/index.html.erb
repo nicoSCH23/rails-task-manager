@@ -6,11 +6,11 @@
           <% @tasks.each do |task|%>
             <li>
               <% if task.completed %>
-                <%= link_to edit_path(task.id) do %>
+                <%= link_to edit_task_path(task.id) do %>
                   <i class="far fa-check-square" aria-hidden="true"></i>
                 <% end %>
               <% else %>
-                <%= link_to edit_path(task.id) do %>
+                <%= link_to edit_task_path(task.id) do %>
                   <i class="far fa-square" aria-hidden="true"></i>
                 <% end %>
               <% end %>
@@ -24,7 +24,7 @@
           <% end %>
         </ul>
         <div>
-          <%= link_to 'Add a new task', new_path, class: "btn btn-primary" %>
+          <%= link_to 'Add a new task', new_task_path, class: "btn btn-primary" %>
         </div>
     </div>
   </div>
